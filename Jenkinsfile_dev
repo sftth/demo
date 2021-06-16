@@ -10,9 +10,9 @@ pipeline {
             steps {
                 echo '========================2. Maven Build ====================='
                 sh " chmod +x ./mvnw"
-                sh "./mvnw clean package -Pdev"
+                sh "./mvnw clean package"
             }
-        } // Maven Build
+        }
         stage('SonarQube analysis') {
             steps {
                 withSonarQubeEnv('sonarqube') {
