@@ -1,0 +1,20 @@
+.select2-hidden-accessible {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden;
+!important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+.form-select {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    background-image: none;
+    padding: 0.2rem 0.75rem 0.2rem;
+    color: #5a6268;
+}
