@@ -1,0 +1,30 @@
+#!groovy
+
+env.projectid
+
+pipeline {
+    agent any
+
+    stages {
+        stage('mvn Build') {
+            steps {
+                echo '========================2. Maven Build ====================='
+                sh " chmod +x ./mvnw"
+                sh "./mvnw clean package -Pdev"
+            }
+        } // Maven Build
+        stage('SonarQube analysis') {
+            steps {
+                withSonarQubeEnv('sonarqube') {
+                    sh './mvnw sonar:sonar'
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            junit '**/target/surefire-reports/TEST-*.xml'
+        }
+    }
+}
