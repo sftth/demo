@@ -28,7 +28,7 @@
     		<id>nglfm-repository</id>
     		<name>repository for demo</name>
     		<layout>default</layout>
-    		<url>http://3.86.142.227/:8081/repository/maven-public/</url>
+    		<url>http://10.0.1.54/:8081/repository/maven-public/</url>
     		<snapshots>
     			<enabled>true</enabled>
     		</snapshots>
@@ -43,7 +43,7 @@
     		<id>nglfm-repository</id>
     		<name>repository for demo</name>
     		<layout>default</layout>
-    		<url>http://3.86.142.227/:8081/repository/maven-public/</url>
+    		<url>http://10.0.1.54/:8081/repository/maven-public/</url>
     		<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
